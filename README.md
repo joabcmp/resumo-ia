@@ -66,31 +66,3 @@ cd frontend
 npm install
 npm run dev
 Frontend em: http://localhost:5173/.
-
-Endpoints principais (backend)
-Base: http://127.0.0.1:8000/api/
-
-POST /register/
-Cria um novo usuário e retorna:
-
-dados básicos do usuário
-
-access e refresh tokens (JWT)
-
-POST /login/
-Recebe username e password e retorna:
-
-access e refresh tokens (JWT)
-
-POST /summarize/ (autenticado)
-Header: Authorization: Bearer <access_token>
-Body JSON:
-
-json
-Copiar código
-{ "text": "texto longo aqui..." }
-Resposta:
-
-json
-Copiar código
-{ "summary": "resumo gerado pela IA" }
